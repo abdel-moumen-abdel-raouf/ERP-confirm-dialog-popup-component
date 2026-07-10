@@ -13,7 +13,7 @@ export function generateCodeTemplates(config: DialogConfig): CodeTemplateResult 
 import { CommonModule } from '@angular/common';
 import { trigger, style, transition, animate } from '@angular/animations';
 
-export type DialogTheme = 'light' | 'dark' | 'slate' | 'amber';
+export type DialogTheme = 'light' | 'dark' | 'slate' | 'amber' | 'sleek';
 export type DialogWidth = 'sm' | 'md' | 'lg' | 'xl' | 'custom';
 export type DialogAnimation = 'scale' | 'slide-up' | 'fade' | 'slide-down' | 'rotate-in';
 export type DialogIconType = 'alert' | 'check' | 'info' | 'trash' | 'warning' | 'shield';
@@ -580,6 +580,57 @@ export class ErpConfirmDialogComponent {
   }
 }
 
+// Theme Sleek (High-Fidelity Modern Glassmorphism)
+.erp-theme-sleek {
+  background-color: rgba(11, 13, 19, 0.9);
+  backdrop-filter: blur(20px);
+  color: #f5f3ff;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.85), 0 0 40px rgba(99, 102, 241, 0.15);
+
+  .erp-dialog-header-wrapper {
+    background-color: rgba(99, 102, 241, 0.05);
+    border-bottom: 1px solid rgba(99, 102, 241, 0.15);
+  }
+
+  .erp-header-badge {
+    background-color: rgba(99, 102, 241, 0.12);
+    color: #a5b4fc;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+  }
+
+  .erp-subtitle-text { color: #818cf8; }
+  .erp-message-text { color: #e0e7ff; }
+
+  .erp-records-warning-panel {
+    background-color: rgba(11, 13, 19, 0.6);
+    border: 1px solid rgba(99, 102, 241, 0.15);
+    color: #e0e7ff;
+    .erp-panel-header { color: #a5b4fc; }
+  }
+
+  .erp-toggle-diagnostics-btn {
+    color: #a5b4fc;
+    &:hover { background-color: rgba(99, 102, 241, 0.1); }
+  }
+
+  .erp-diagnostics-details-box {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #c7d2fe;
+    border-inline-start: 3px solid #6366f1;
+  }
+
+  .erp-dialog-footer-wrapper {
+    background-color: rgba(11, 13, 19, 0.8);
+    border-top: 1px solid rgba(99, 102, 241, 0.15);
+  }
+
+  .erp-header-close-btn {
+    color: #818cf8;
+    &:hover { background-color: rgba(99, 102, 241, 0.15); color: #f5f3ff; }
+  }
+}
+
 // ------------------------------------------
 // STRUCTURAL CONTAINER STYLES (targeted by ID)
 // ------------------------------------------
@@ -905,7 +956,7 @@ export class ErpConfirmDialogComponent {
 import { motion, AnimatePresence } from 'framer-motion';
 import { AlertCircle, CheckCircle, Info, Trash2, AlertTriangle, ShieldAlert } from 'lucide-react';
 
-export type DialogTheme = 'light' | 'dark' | 'slate' | 'amber';
+export type DialogTheme = 'light' | 'dark' | 'slate' | 'amber' | 'sleek';
 export type DialogWidth = 'sm' | 'md' | 'lg' | 'xl' | 'custom';
 export type DialogAnimation = 'scale' | 'slide-up' | 'fade' | 'slide-down' | 'rotate-in';
 export type DialogIconType = 'alert' | 'check' | 'info' | 'trash' | 'warning' | 'shield';

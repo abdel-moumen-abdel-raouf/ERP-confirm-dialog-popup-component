@@ -1,4 +1,4 @@
-export type DialogTheme = 'light' | 'dark' | 'slate' | 'amber';
+export type DialogTheme = 'light' | 'dark' | 'slate' | 'amber' | 'sleek';
 export type DialogWidth = 'sm' | 'md' | 'lg' | 'xl' | 'custom';
 export type DialogAnimation = 'scale' | 'slide-up' | 'fade' | 'slide-down' | 'rotate-in';
 export type DialogIconType = 'alert' | 'check' | 'info' | 'trash' | 'warning' | 'shield';

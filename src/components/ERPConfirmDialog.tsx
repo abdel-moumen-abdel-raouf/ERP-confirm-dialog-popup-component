@@ -147,6 +147,19 @@ export const ERPConfirmDialog: React.FC<ERPConfirmDialogProps> = ({
           detailsBox: 'bg-black/40 text-amber-200/80 font-mono border-l-2 border-amber-600',
           closeBtn: 'text-zinc-500 hover:text-amber-300 hover:bg-zinc-900 rounded-md',
         };
+      case 'sleek':
+        return {
+          card: 'bg-[#0B0D13]/90 backdrop-blur-xl border border-indigo-500/25 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8),0_0_40px_rgba(99,102,241,0.15)] text-indigo-50/95',
+          header: 'border-b border-indigo-500/10 bg-indigo-950/20',
+          badge: 'bg-indigo-500/10 text-indigo-300 border-indigo-500/30 border',
+          body: 'text-indigo-200/80 font-sans',
+          footer: 'bg-indigo-950/10 border-t border-indigo-500/10',
+          affectedBox: 'bg-indigo-950/20 border border-indigo-500/15 text-indigo-200/90',
+          recordsLabel: 'text-indigo-400 font-bold uppercase tracking-wider',
+          detailsBtn: 'text-indigo-400 hover:text-indigo-300 hover:bg-indigo-950/30 rounded-md transition-all',
+          detailsBox: 'bg-black/45 text-indigo-200/80 font-mono border-l-2 border-indigo-500',
+          closeBtn: 'text-indigo-400 hover:text-indigo-200 hover:bg-indigo-950/40 rounded-md',
+        };
       case 'dark':
       default:
         return {

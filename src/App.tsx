@@ -726,6 +726,7 @@ export default function App() {
                       <option value="slate">Cobalt Slate Theme (Professional High-Tech)</option>
                       <option value="amber">Advisory Amber Theme (Audit Warning Alert)</option>
                       <option value="light">Glacier Light Theme (Standard Enterprise ERP)</option>
+                      <option value="sleek">Sleek Interface Theme (Ultra Glassmorphism & Glowing border)</option>
                     </select>
                   </div>
 
