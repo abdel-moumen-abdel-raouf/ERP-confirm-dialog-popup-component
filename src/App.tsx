@@ -31,8 +31,9 @@ import { DialogConfig, DialogPreset } from './types';
 import { DEFAULT_DIALOG_CONFIG, DIALOG_PRESETS } from './constants';
 import { ERPConfirmDialog } from './components/ERPConfirmDialog';
 import { generateCodeTemplates } from './utils/angularCodeGen';
+import { CanonicalConfirmDialogReference } from './reference/CanonicalConfirmDialogReference';
 
-export default function App() {
+function PlaygroundApp() {
   // Config state
   const [config, setConfig] = useState<DialogConfig>(DEFAULT_DIALOG_CONFIG);
   
@@ -1426,4 +1427,12 @@ export default function App() {
 
     </div>
   );
+}
+
+export default function App() {
+  if (window.location.pathname === '/reference/confirm-dialog') {
+    return <CanonicalConfirmDialogReference />;
+  }
+
+  return <PlaygroundApp />;
 }
