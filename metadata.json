@@ -1,0 +1,6 @@
+{
+  "name": "ERP Confirm Dialog Studio",
+  "description": "An interactive designer, customizer, and code generator for enterprise-grade ERP confirm dialog popups. Create fully customizable dialogs with custom headers, icons, footers, buttons, and responsive breakpoints, and copy production-ready Angular (TS + SCSS) and React code.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
